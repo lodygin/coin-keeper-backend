@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "lint:fix": "eslint --fix ./*.js",
+    "lint": "eslint ./*.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8"
