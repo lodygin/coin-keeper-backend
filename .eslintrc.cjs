@@ -28,5 +28,6 @@ module.exports = {
       'error',
       'always',
     ],
+    'no-unused-vars': 'warn',
   },
 };
